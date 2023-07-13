@@ -48,3 +48,48 @@ Markdown : 일반 텍스트로 문서를 작성하는 간단한 방법.<br>"# ~~
 <br> - git config --global user.name "유저네임"
 <br> - git log : commit 목록 확인
 <br> - git status : 로컬 저장소의 파일 상태 확인
+---
+<br>
+<br>c 언어 : 메모리를 직접적으로 컨트롤 가능 => 효율적인 프로그램 구성 가능
+단, 매우 어려움
+
+python : c에 비하여 쉬움, 많은 사람들이 사용, 많은 것을 할 수 있음.
+1. 대/소문자 구별
+2. 띄어쓰기
+3. 스펠링
+
+저장 : 메모리에 쌓임(박스)
+print(2+3) => 5
+
+1000번지에 데이터 10을 저장해라
+
+사용자로 입력을 받아서 +3을 해서 출력해줘
+a = 입력을 받는다
+print(a+3)
+
+dust = 60 : dust라는 빈 공간을 설정하고 그 안에 60의 값을 넣는다.
+
+숫자, 글자, 참/거짓 저장 가능
+
+print(hello) : hello 변수에 담긴 내용을 출력해주세요.
+print('hello') : 'hello'라는 글자를 출력해주세요.
+
+조건
+if True:
+  print('조건문입니다.')
+
+if/else
+if dust>50:
+	print('50초과')
+else:
+	print('50이하')
+if dust > 150:
+	print('매우나쁨)
+elif 조건:
+	print("나쁨")
+else : 
+	print("좋음")
+
+while
+while True: (무한하게 돌게된다)
+    print('계속해주세요')
