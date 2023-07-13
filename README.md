@@ -14,6 +14,7 @@ Markdown : 일반 텍스트로 문서를 작성하는 간단한 방법.<br>"# ~~
 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 <br>[MarkText](https://github.com/marktext/marktext#download-and-installation)
 ---
+
 <br> CLI(Command Line Interface) : 명령어를 통해 사용자와 컴퓨터가 상호 작용하는 방식
 <br> 기초문법
 <br> . : 현재 디렉토리, .. : 현재의 상위 디렉토리
@@ -30,6 +31,7 @@ Markdown : 일반 텍스트로 문서를 작성하는 간단한 방법.<br>"# ~~
 <br> - 중앙 서버에 의존하지 않고도 동시에 다양한 작업을 수행할 수 있음 -> 개발자들 간의 작업 충돌을 줄여주고 개발 생산성을 향상
 <br> - 중앙 서버의 장애나 손실에 대비하여 백업과 복구가 용이
 <br> - 인터넷에 연결되지 않은 환경에서도 작업을 계속할 수 있음 -> 변경 이력과 코드를 로컬 저장소에 기록하고, 나중에 중앙 서버와 동기화
+<br>
 <br> ● git의 3가지 영역
 <br> - Working Directory : 실제 작업 중인 파일들이 위치하는 영역
 <br> - Staging Area : Wokring Directory에서 변경된 파일 중, 다음 버전에 포함시킬 파일들을 선택적으로 추가하거나 제외할 수 있는 중간 준비 영역
