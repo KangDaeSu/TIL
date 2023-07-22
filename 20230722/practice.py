@@ -114,7 +114,7 @@ my_list = [1, 2, 3]
 my_list[0] = 100
 
 print(my_list) # [100, 2, 3]
-'''
+--------------------------------------------------------------
 
 print(3 + 5.0) # 8.0
 print(True + 3) # 4
@@ -127,3 +127,81 @@ print(int(3.5)) # 3
 
 #ValueError: invalid literal for int() with base 10: '3.5'
 print(int('3.5'))
+----------------------------------------------------------------
+
+y = 10
+y -= 4
+print(y) # 6
+
+z = 7
+z *= 2
+print(z) # 14
+
+w = 15
+w /= 4
+print(w) # 3.75
+
+q = 20
+q //= 3
+print(q) # 6
+-------------------------------
+
+print(3>6) # False
+print(2.0 == 2) # True
+print(2 != 2) # False
+print('HI' == 'hi') # False
+
+# SyntaxWaring
+# ==은 값(데이터)을 비교하는 것이지만 is는 래퍼런스(주소)를 비교하기 때문
+# is 연산자는 되도록이면 None, True, False 등을 비교할 때 사용
+print(2.0 is 2) # False
+
+print(True and False) # False
+print(True or False) # True
+print(not True) # False
+print(not 0) # True
+
+num = 15
+result = (num > 10) and (num % 2 ==0)
+print(result) # False
+
+name = 'Alice'
+age = 25
+result = (name == 'Alice') or (age == 30)
+print(result) # True
+
+vowels = 'aeiou'
+
+print(('a' and 'b') in vowels) # False
+print(('b' and 'a') in vowels) # True
+
+print(3 and 5) # 5
+print(3 and 0) # 0
+print(0 and 3) # 0
+print(0 and 0) # 0
+
+print(5 or 3) # 5
+print(3 or 0) # 3
+print(0 or 3) # 3
+print(0 or 0) # 0
+---------------------------------------------------------
+word = 'hello'
+numbers = [1, 2, 3, 4, 5]
+
+print('h' in word) # True
+print('z' in word) # False
+
+print(4 not in numbers) # False
+print(6 not in numbers) # True
+'''
+# Gildong Hong
+print('Gildong' + 'Hong')
+
+#hihihihihi
+print('hi' * 5)
+
+#[1, 2, 'a', 'b']
+print([1,2] + ['a', 'b'])
+
+#[1, 2, 1, 2]
+print([1, 2] * 2)
