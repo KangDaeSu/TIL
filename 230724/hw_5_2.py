@@ -16,4 +16,8 @@ def count_character(main,chr):
     result = main.count(chr)
     return result
 result = count_character("Hello, World!", "o")
+result1 = count_character("", "o")
+result2 = count_character("Heollo, Worlod!", "o")
 print(result) # 2
+print(result1)
+print(result2)
