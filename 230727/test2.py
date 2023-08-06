@@ -35,6 +35,7 @@ a = [
     [2, 5, 6],
     [12, 5, 6]
 ]
+a = [[1, 2, 3],[3, 4, 5],[2, 5, 6],[12, 5, 6]]
 # a0 = a[0]
 # print(a0[1], a[0][1])
 cur_max = 0
@@ -152,8 +153,7 @@ print(make1(cnt-1))
 
 # 123 => ['1', '2', '3']
 print(list(str(123)))
-# '123' => [1, 2, 3]
-a = '123'
+
 
 '''
 
@@ -212,20 +212,25 @@ a = '123'
 
 # 70점 이상 점수의 평균은?
 
-def getScore(my_dict): # 참조: my_dict.values(), my_dict.items()
-    a = 0
-    count = 0
-    for i in my_dict:
+# def getScore(my_dict): # 참조: my_dict.values(), my_dict.items()
+#     a = 0
+#     count = 0
+#     for i in my_dict:
         
-        if my_dict[i] >= 70:
-            a += my_dict[i]
-            count += 1
-    return a / count
+#         if my_dict[i] >= 70:
+#             a += my_dict[i]
+#             count += 1
+#     return a / count
 
-my_dict = {
-    '김씨' : 80,
-    '이씨' : 70,
-    '박씨' : 60
-}
+# my_dict = {
+#     '김씨' : 80,
+#     '이씨' : 70,
+#     '박씨' : 60
+# }
 
-print(getScore(my_dict))
+# print(getScore(my_dict))
+
+
+# '123' => [1, 2, 3]
+a = '123'
+print(list(map(int,list(a))))
