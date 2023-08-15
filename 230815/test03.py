@@ -96,13 +96,37 @@ for i in range(len(arr)):
         max_num = arr[i]
 result = arr.index(max_num)+1
 print(max_num, result, sep = '\n')
-'''
+
 N, M = map(int, input().split())
-arr = [list(map(int, input().split())) for _ in range(M)]
 
+basket = [0] * (N + 1)
 
-print(N, M)
-for i in arr:
-    print(*i)
+for _ in range(M):
+    i, j, k = map(int, input().split())
+    for n in range(i, j+1):
+        basket[n] = k
 
+for i in range(1, N+1):
+    print(basket[i], end = ' ')
 
+N, M = map(int, input().split())
+lst = [0] * (N+1)
+for _ in range(M):
+    s, e, N = map(int, input().split())
+    for i in range(s, e+1):
+        lst[i] = N
+
+print(*lst[1:])
+
+import sys
+sys.stdin = open("input.txt", "r")
+
+N, M = map(int, input().split())
+basket = [k for k in range(1, N+1)]
+
+for _ in range(M):
+    i, j = map(int, input().split())
+    basket[i-1], basket[j-1] = basket[j-1], basket[i-1]
+
+print(*basket)
+'''
