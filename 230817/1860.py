@@ -4,20 +4,20 @@ sys.stdin = open("1860.txt", "r")
 T = int(input())
 for tc in range(1, T+1):
     N, M, K = map(int, input().split())
-    lst = list(map(int, input().split()))
-    lst.sort()
+    person = list(map(int, input().split()))
 
-    repeat = 0
+    person.sort()
     cnt = 0
-    while repeat < lst[-1] // M:
-        for i in range(N):
-            if lst[i]//M == 0:
-                print("Impossible")
-            else:
-                cnt - 
+    result = 'Possible'
+    for i in person:
+        if i < M:
+            result = 'Impossible'
+            break
+        elif i >= M:
+            cnt += 1
+            fishbread = (i // M) * K
+            if fishbread < cnt:
+                result = 'Impossible'
+                break
 
-        cnt += K
-        repeat += 1
-
-
-    # print(f'#{tc} {}')
+    print(f'#{tc} {result}')
