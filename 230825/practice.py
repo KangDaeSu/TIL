@@ -11,7 +11,7 @@ for i in range(N):
             sumV = nums[i]+nums[j]+nums[k]
             if sumV <= M:
                 result = max(result, sumV)
-                break
+
                 
 print(result)
 
