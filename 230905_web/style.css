@@ -1,0 +1,20 @@
+.container {
+  width: 800px;
+  height: 800px;
+  border: 2px solid black;
+}
+.row {
+  display: flex;
+}
+
+.white-box {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+}
+
+.black-box {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}
