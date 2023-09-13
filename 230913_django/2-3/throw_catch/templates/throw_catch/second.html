@@ -1,0 +1,9 @@
+{% extends "throw_catch/base.html" %}
+
+  {% block content %}
+    <form action="/throw_catch/first/">
+      <label for="throw">throw: </label>
+      <input type="text" name="message" id="throw">
+      <input type="submit" value="휙">
+    </form>
+  {% endblock content %}
