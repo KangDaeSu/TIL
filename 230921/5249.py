@@ -1,3 +1,5 @@
+# 최소 신장 트리
+
 import sys
 sys.stdin = open('input.txt', 'r')
 

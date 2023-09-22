@@ -57,7 +57,7 @@ def dijkstra(start):
             cost = next[1]      # 가는 데 필요한 거리
 
             # next_node로 가기 위한 누적 거리
-            new_cost = dist + cost # dist - 지금까지 온 누적 거리
+            new_cost = dist + cost  # dist : 지금까지 온 누적 거리
 
             # 누적 거리가 기존보다 크다면
             if distance[next_node] <= new_cost:
